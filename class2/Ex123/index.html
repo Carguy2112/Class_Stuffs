@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+<!--Exercise 1 and 2-->
+  <style>
+    .p{color: red;}
+    @media screen and (max-width: 600px) {
+      .p{ color: blue;}      
+    }
+    .relative{
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 2px solid wheat;
+    }
+    .absolute{
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      width: 60px;
+      height: 10%;
+      border: 2px dashed black;
+    }
+  </style>
+</head>
+<body>
+  <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui eaque minus reiciendis repudiandae expedita, voluptatem laborum, modi laudantium quidem quis nemo. Praesentium iure sed, animi suscipit id tempore quisquam debitis.</p>
+
+<!--Exercise 2-->
+  <div class="relative">relative
+    <div class="absolute">absolute</div>
+  </div>
+
+<!--Exercise 3-->
+  <picture>
+    <source
+      media="(min-width:1200px)"
+      srcset="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+    />
+    <source
+      media="(min-width:1000px)"
+      srcset="https://images.unsplash.com/photo-1580654093354-c70ce4b464c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"         
+    />    
+    <img 
+      src="https://images.unsplash.com/photo-1478991031579-5f22c0ee9c9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+      alt="" 
+      style="width: auto;"
+    />
+  </picture>
+</body>
+</html>
+
+
+<!--Exercise 1: Use Media Queries
+Task: Use a media query to change the color of a paragraph when the screen width is less than 600px.
+
+Exercise 2: Positioning in CSS
+Task: Position an element 50 pixels from the top of its parent element using relative positioning.
+
+Exercise 3: Responsive Images
+Task: Create an image that is responsive and will load different images based on the viewport width.--/>
+
