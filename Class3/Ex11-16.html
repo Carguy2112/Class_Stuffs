@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercise 11 Data types
+        // let str = '1.0';    //string
+        // let num = 1.0;      //number
+        // let boo = true;     //boolean
+        // let zip = null;     
+        // let zilch = undefined; 
+        // let  user = {
+        //     name: 'Joseph',
+        //     occupation: 'Code Coach'
+        // }; 
+        // let names = ['Joseph', 'D', 'Tom'];
+        // let ummmm; // still thinking what to put in here...
+
+        //Exercise 12 
+        //???
+
+        //Exercise 13
+        // function arrayOfMultiples(num, length){
+        //     for (let i = 1; i<= length; i++){
+        //     console.log(num * i);
+        //     }
+        // }
+        // arrayOfMultiples(12,10);
+
+        //Exercise 14 
+        // let num = -3
+        // if(num > 0){
+        //     console.log(`${num} is positive`)
+        // } else if(num < 0) {
+        //     console.log(`${num} is negative`)
+        // } else {
+        //     console.log(`${num} is zero`)
+        // };
+
+        //Exercise 15
+        // const number = parseFloat(prompt('Enter a number: '));
+
+        // for(let i = 1; i <= 10; i++){
+        //     const result = i * number;
+
+        //     console.log(`${number} * ${i} = ${result}`);
+        // }
+
+        //Exercise 16
+        function IsPrime(num){
+            for(let i = 2, s = Math.sqrt(num); i<= s; i++){
+                if(num % i === 0) return false;
+            }
+            return num > 1;            
+        }
+        const num = parseInt(prompt('Enter an integer: '));
+        if (IsPrime(num)){
+            console.log(`${num} is prime.`);
+        } else {
+            console.log(`${num} is not prime.`);
+        };
+        
+
+
+
+    </script>
+</head>
+<body>
+    12 is confusing
+</body>
+</html>
+
+<!-- Exercise #11: Basic
+Aim: Create a variable for every JavaScript Data Type
+
+Exercise 12.... I don't understand the exercise. I can create a list of objects and display them with html but I don't understand what is meant by dynamically create a new list item with the food name inside.
+
+Exercise #13: Advanced
+Aim: Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+
+Exercise #15: Intermediate
+Objective: Control program flow using loops
+
+Instructions: Write a JavaScript program that displays the multiplication table of a number up to 10 using a for loop.
+
+Exercise #16: Advanced
+*Aim: Create a function that checks if a given number is prime.
+-->
