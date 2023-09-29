@@ -1,0 +1,6 @@
+<h1 class="bg-success">Howdy peeps {{ name }}</h1>
+<app-box *ngFor="let box of boxes"></app-box>
+<!-- <app-box></app-box>
+<app-box></app-box> -->
+<input type="text" [(ngModel)]="quote" />
+<div class="border">{{ quote }}</div>
