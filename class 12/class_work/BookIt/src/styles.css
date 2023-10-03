@@ -1,0 +1,22 @@
+html,
+body,
+input,
+label,
+button,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h2 {
+  font-weight: 500;
+}
+p,
+small,
+span {
+  font-weight: 500;
+}
