@@ -1,21 +1,26 @@
 <div class="row">
   <div class="col-md-12">
-    <h2>Book Title</h2>
+    <h2>{{ book.title }}</h2>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <h3>Author</h3>
+    <h3>{{ book.author }}</h3>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <p>Genre</p>
+    <p>{{ book.genre }}</p>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <img src="" alt="" class="img-responsive" />
+    <img
+      [src]="book.coverImagePath"
+      [alt]="book.title"
+      class="img-responsive"
+      style="max-height: 250px"
+    />
   </div>
 </div>
 <div class="row">
