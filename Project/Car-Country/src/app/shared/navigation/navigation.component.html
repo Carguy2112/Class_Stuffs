@@ -1,0 +1,36 @@
+<nav class="navbar navbar-light bg-light navbar-expand-lg mb-4">
+  <a class="navbar-brand brand" id="brand" href="#">
+    <img src="https://cdn07.carsforsale.com/CustomTemplatePhotos/1005340/images/logo-white.badf4313.png" alt="" height="80px">
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarToggler"
+    aria-label="Toggle navigation"
+    aria-controls="navbarToggler"
+    aria-expanded="false"
+    (click)="collapsed = !collapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="navbar-collapse collapse"
+    id="navbarToggler"
+    [class.collapse]="collapsed"
+    (window:resize)="collapsed = true"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="inventory" routerLinkActive="active">Inventory</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="vehicle" routerLinkActive="active">Vehicles</a>
+        </li>
+      </ul>
+  </div>
+</nav>
