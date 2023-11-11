@@ -1,0 +1,9 @@
+<div class="row mb-3 d-flex" style="gap: 1rem">
+  <div
+    class="col-md-12"
+    *ngFor="let currentVehicle of myInventory"
+    >
+    <app-vehicle [vehicle]="currentVehicle" ></app-vehicle>
+
+  </div>
+</div>

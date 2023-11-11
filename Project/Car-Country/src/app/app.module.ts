@@ -8,6 +8,7 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { VehicleEditComponent } from './vehicle/vehicle-edit/vehicle-edit.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
+import { InventoryListComponent } from './inventory/inventory-list/inventory-list.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     VehicleComponent,
     VehicleEditComponent,
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    InventoryListComponent
   ],
   imports: [
     BrowserModule,

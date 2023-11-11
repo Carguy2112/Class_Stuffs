@@ -5,12 +5,17 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { VehicleComponent } from "./vehicle/vehicle.component";
 import { VehicleEditComponent } from "./vehicle/vehicle-edit/vehicle-edit.component";
+import { InventoryComponent } from "./inventory/inventory.component";
 
 
 const appRoutes: Route[] = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'inventory',
+    component: InventoryComponent
   },
   {
     path: 'vehicle',
