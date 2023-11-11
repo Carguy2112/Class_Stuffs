@@ -1,1 +1,25 @@
 <p>vehicle works!</p>
+
+<a
+  class="list-group-item clearfix"
+  style="cursor: pointer;"
+  routerLink="idx"
+  routerLinkActive="active"
+  >
+  <div class="float-left">
+    <h4 class="list-group-item-heading">
+      {{ vehicle.year }} ' ' {{ vehicle.make }} ' ' {{ vehicle.model }}
+    </h4>
+    <p class="list-group-item-text mb-0">
+      {{ 'vehicle.details' }}
+    </p>
+  </div>
+  <div class="float-right">
+    <img
+      class="img-resposive rounded"
+      src="{{vehicle.coverImagePath}}"
+      alt="IMG"
+      style="max-height: 80rem;"
+    />
+  </div>
+</a>
