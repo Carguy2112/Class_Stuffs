@@ -7,6 +7,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { VehicleEditComponent } from './vehicle/vehicle-edit/vehicle-edit.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
     InventoryComponent,
     VehicleComponent,
     VehicleEditComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
