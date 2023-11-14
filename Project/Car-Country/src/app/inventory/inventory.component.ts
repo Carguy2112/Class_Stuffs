@@ -15,8 +15,4 @@ export class InventoryComponent {
    constructor(
     private inventoryService: InventoryService,
    ){}
-
-   ngOnInit() {
-
-   }
 }
