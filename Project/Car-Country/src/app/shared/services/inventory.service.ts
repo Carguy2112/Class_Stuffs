@@ -38,6 +38,11 @@ export class InventoryService {
     )
   ];
 
+
+  getVehicle(idx: number) {
+    return this.allVehicles.slice()[idx];
+  }
+
   getVehicles() {
     return this.allVehicles.slice();
   }
