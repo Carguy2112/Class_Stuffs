@@ -1,35 +1,56 @@
 <a
   class="list-group-item clearfix"
-  style="cursor: pointer;"
-  routerLink="idx"
+  style="cursor: pointer"
+  [routerLink]="['/', 'vehicle', idx]"
   routerLinkActive="active"
-  >
+>
   <div class="float-left">
-    <h3 class="list-group-item-heading">{{ vehicle.year }}  {{ vehicle.make }}  {{ vehicle.model }}  {{ vehicle.trim }}</h3>
+    <h3 class="list-group-item-heading">
+      {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
+      {{ vehicle.trim }}
+    </h3>
     <table>
       <colgroup>
-        <col span="1"><col span="1"><col span="1"><col span="1"><col span="1">
+        <col span="1" />
+        <col span="1" />
+        <col span="1" />
+        <col span="1" />
+        <col span="1" />
       </colgroup>
       <tr>
-        <td class="float-right">Exterior:</td> <td> {{ vehicle.exterior }}</td><td style="width: 30px;"></td> <td class="float-right">Engine:</td><td> {{ vehicle.engine }}</td>
+        <td class="float-right">Exterior:</td>
+        <td>{{ vehicle.exterior }}</td>
+        <td style="width: 30px"></td>
+        <td class="float-right">Engine:</td>
+        <td>{{ vehicle.engine }}</td>
       </tr>
       <tr>
-        <td class="float-right">Interior:</td> <td> {{ vehicle.interior }}</td><td style="width: 30px;"></td><td class="float-right">Trans:</td>  <td> {{ vehicle.trans }}</td>
+        <td class="float-right">Interior:</td>
+        <td>{{ vehicle.interior }}</td>
+        <td style="width: 30px"></td>
+        <td class="float-right">Trans:</td>
+        <td>{{ vehicle.trans }}</td>
       </tr>
       <tr>
-        <td class="float-right">Drive:</td>    <td> {{ vehicle.drive }}   </td><td style="width: 30px;"></td> <td class="float-right">Miles:</td> <td> {{ vehicle.miles }} </td>
+        <td class="float-right">Drive:</td>
+        <td>{{ vehicle.drive }}</td>
+        <td style="width: 30px"></td>
+        <td class="float-right">Miles:</td>
+        <td>{{ vehicle.miles }}</td>
       </tr>
     </table>
-    <hr>
-    <h4 style="text-shadow: 2px 2px 5px chartreuse;" >&#36;{{vehicle.price}}</h4>
+    <hr />
+    <h4 style="text-shadow: 2px 2px 5px chartreuse">
+      &#36;{{ vehicle.price }}
+    </h4>
   </div>
 
   <div class="float-right">
     <img
       class="img-resposive rounded"
-      src="{{vehicle.coverImagePath}}"
+      src="{{ vehicle.coverImagePath }}"
       alt="IMG"
-      style="max-height: 12rem;"
+      style="max-height: 12rem"
     />
   </div>
 </a>

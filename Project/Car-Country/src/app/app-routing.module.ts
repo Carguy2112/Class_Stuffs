@@ -20,7 +20,6 @@ const appRoutes: Route[] = [
   },
   {
     path: 'vehicle',
-    component: VehicleComponent,
     children: [
       {
         path: '',
