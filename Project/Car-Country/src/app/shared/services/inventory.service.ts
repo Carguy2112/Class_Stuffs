@@ -20,7 +20,7 @@ export class InventoryService {
       '4X4',
        149091,
       '28,900',
-      'https://cf-img.autorevo.com/2018-gmc-sierra-1500-jackson-mo-7245436/724x724/2873669-40-revo.jpg?_=1695222298',
+      'https://i.postimg.cc/Ss1VpHzg/2873669-40-revo.jpg',
       "This GMC is equipped with 4 Wheel Drive, Leather, Navigation, Power/Heated/Cooled Seats, Sunroof, Back up Camera, Cruise, AM/FM/CD/AUX/Phone, Power Windows/Locks/Mirrors & more! It has a Ecotec 5.3L V8 Engine, an Automatic Transmission and 149xxx miles. We have financing available and we accept trades! Fill out a credit application on our website or come by today!"
     ),
     new Vehicle(

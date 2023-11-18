@@ -1,11 +1,54 @@
-<nav class="navbar navbar-light bg-light navbar-expand-lg my-3 mx-auto">
+<!-- <div>
+  <a href="#"
+    ><img
+      src="https://i.postimg.cc/Vv3xzJbZ/navLogo.png"
+      alt="logo"
+      height="50rem"
+  /></a>
+</div> -->
+
+<nav class="navbar navbar-light bg-light navbar-expand-md my-2 mx-auto py-1">
   <div class="navbar-header">
-    <a href="#" ><img src='https://cdn07.carsforsale.com/CustomTemplatePhotos/1005340/images/logo-white.badf4313.png' alt="logo" height="80rem"></a>
+    <a href="#"
+      ><img
+        src="https://i.postimg.cc/Vv3xzJbZ/navLogo.png"
+        alt="logo"
+        height="60rem"
+    /></a>
   </div>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="inventory" routerLinkActive="active"
+          >Inventory</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="vehicle" routerLinkActive="active"
+          >Vehicle</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div
     class="navbar-collapse collapse"
     id="navbarToggler"
     [class.collapse]="collapsed"
@@ -22,5 +65,5 @@
           <a class="nav-link" routerLink="vehicle" routerLinkActive="active">Vehicle</a>
         </li>
       </ul>
-  </div>
+  </div> -->
 </nav>
