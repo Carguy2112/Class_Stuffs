@@ -12,6 +12,10 @@ export class Vehicle {
     public miles: number,
     public price: string,
     public coverImagePath: string,
+    public profileImagePath: string,
+    public rearImagePath: string,
+    public interiorImagePath: string,
+    public engineImagePath: string,
     public details: string
   ){}
 }
