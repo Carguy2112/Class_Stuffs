@@ -1,0 +1,23 @@
+<div class="row">
+  <a
+    class="list-group-item "
+    style="cursor: pointer; padding: 2%;"
+    [routerLink]="['/', 'vehicle', idx]"
+    routerLinkActive="active"
+  >
+    <div class="col-4 col-sm-7" style="margin: 0%;">
+      <h6>
+        {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
+      </h6>
+    </div>
+
+    <div class="col-4 col-sm-4">
+      <img
+        class="img-resposive rounded"
+        src="{{ vehicle.coverImagePath }}"
+        alt="IMG"
+        style="max-width: 20rem"
+      />
+    </div>
+  </a>
+</div>

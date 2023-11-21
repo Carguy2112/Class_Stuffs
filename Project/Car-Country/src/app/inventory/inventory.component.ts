@@ -6,13 +6,11 @@ import { InventoryService } from '../shared/services/inventory.service';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
-  styleUrls: ['./inventory.component.css']
+  styleUrls: ['./inventory.component.css'],
 })
 
 export class InventoryComponent {
-   myVehicles: Vehicle[] = [];
+  myVehicles: Vehicle[] = [];
 
-   constructor(
-    private inventoryService: InventoryService,
-   ){}
+  constructor(private inventoryService: InventoryService) {}
 }

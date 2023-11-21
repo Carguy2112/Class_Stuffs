@@ -1,3 +1,15 @@
 <div class="row justify-content-center">
-  <img src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg" alt="">
+  <img src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg" alt="" />
+</div>
+<hr>
+<br />
+<hr>
+<label for="featured" style="font-size: small; font-style: italic;">Featured:</label>
+<div class="row justify-content-center">
+  <div
+    class="col-sm-3" style="margin-right: 8%;"
+    *ngFor="let currentVehicle of myVehicles; let i = index"
+  >
+    <app-featured [vehicle]="currentVehicle" [idx]="i"></app-featured>
+  </div>
 </div>

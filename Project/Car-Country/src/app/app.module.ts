@@ -10,6 +10,7 @@ import { VehicleEditComponent } from './vehicle/vehicle-edit/vehicle-edit.compon
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { InventoryListComponent } from './inventory/inventory-list/inventory-list.component';
 import { VehicleDetailsComponent } from './vehicle/vehicle-details/vehicle-details.component';
+import { FeaturedComponent } from './vehicle/featured/featured.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { VehicleDetailsComponent } from './vehicle/vehicle-details/vehicle-detai
     NavigationComponent,
     HomeComponent,
     InventoryListComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,
