@@ -13,6 +13,10 @@ export class VehicleDetailsComponent {
   vehicle: Vehicle;
   idx: number;
 
+  slides = [
+
+  ]
+
   constructor(
     private route: ActivatedRoute,
     private inventoryService: InventoryService,

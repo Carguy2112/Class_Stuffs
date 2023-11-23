@@ -23,7 +23,7 @@ import { FeaturedComponent } from './vehicle/featured/featured.component';
     HomeComponent,
     InventoryListComponent,
     VehicleDetailsComponent,
-    FeaturedComponent
+    FeaturedComponent,
   ],
   imports: [
     BrowserModule,
