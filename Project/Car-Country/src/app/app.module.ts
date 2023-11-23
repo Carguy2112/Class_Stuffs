@@ -11,6 +11,7 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
 import { InventoryListComponent } from './inventory/inventory-list/inventory-list.component';
 import { VehicleDetailsComponent } from './vehicle/vehicle-details/vehicle-details.component';
 import { FeaturedComponent } from './vehicle/featured/featured.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FeaturedComponent } from './vehicle/featured/featured.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

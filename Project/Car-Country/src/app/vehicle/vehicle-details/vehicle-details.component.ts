@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
 import { Vehicle } from '../vehicle.model';
 import { InventoryService } from 'src/app/shared/services/inventory.service';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-vehicle-details',
@@ -12,10 +13,6 @@ import { InventoryService } from 'src/app/shared/services/inventory.service';
 export class VehicleDetailsComponent {
   vehicle: Vehicle;
   idx: number;
-
-  slides = [
-
-  ]
 
   constructor(
     private route: ActivatedRoute,
@@ -28,6 +25,31 @@ export class VehicleDetailsComponent {
       this.idx = +params['id'];
       this.vehicle = this.inventoryService.getVehicle(this.idx);
     })
+  }
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: true
   }
 
 }
