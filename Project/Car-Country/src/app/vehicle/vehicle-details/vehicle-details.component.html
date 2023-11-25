@@ -1,17 +1,27 @@
 <div class="row justify-content-center">
-  <div style="width: 60%;">
+  <div style="width: 60%">
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide><img src="{{ vehicle.coverImagePath }}"></ng-template>
-      <ng-template carouselSlide><img src="{{ vehicle.profileImagePath }}"></ng-template>
-      <ng-template carouselSlide><img src="{{ vehicle.rearImagePath }}"></ng-template>
-      <ng-template carouselSlide><img src="{{ vehicle.interiorImagePath }}"></ng-template>
-      <ng-template carouselSlide><img src="{{ vehicle.engineImagePath }}"></ng-template>
+      <ng-template carouselSlide
+        ><img src="{{ vehicle.coverImagePath }}"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img src="{{ vehicle.profileImagePath }}"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img src="{{ vehicle.rearImagePath }}"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img src="{{ vehicle.interiorImagePath }}"
+      /></ng-template>
+      <ng-template carouselSlide
+        ><img src="{{ vehicle.engineImagePath }}"
+      /></ng-template>
     </owl-carousel-o>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-12">
     <h1 style="display: inline">
       {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
     </h1>
@@ -19,24 +29,30 @@
       &#36;{{ vehicle.price }}
     </h3>
     <hr />
-    <h6>{{ vehicle.details }}</h6>
-    <p style="font-weight: 600">
-      If you have any questions, give us a call at (573) 555-1212 or come on by!
-    </p>
   </div>
-  <div class="col-md-6">
-    <br />
-    <br />
-    <hr />
-    <div style="column-count: 2">
-      <ul>
-        <li><label for="engine">Engine:</label> {{ vehicle.engine }}</li>
-        <li><label for="exterior">Exterior:</label> {{ vehicle.exterior }}</li>
-        <li><label for="Trans">Trans:</label> {{ vehicle.trans }}</li>
-        <li><label for="interior">Interior:</label> {{ vehicle.interior }}</li>
-        <li><label for="drive">Drive:</label> {{ vehicle.drive }}</li>
-        <li><label for="Miles">Miles:</label> {{ vehicle.miles }}</li>
-      </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <h6>{{ vehicle.details }}</h6>
+      <p style="font-weight: 600">
+        If you have any questions, give us a call at (573) 555-1212 or come on
+        by!
+      </p>
+    </div>
+    <div class="col-md-6">
+      <div style="column-count: 2">
+        <ul>
+          <li><label for="engine">Engine:</label> {{ vehicle.engine }}</li>
+          <li>
+            <label for="exterior">Exterior:</label> {{ vehicle.exterior }}
+          </li>
+          <li><label for="Trans">Trans:</label> {{ vehicle.trans }}</li>
+          <li>
+            <label for="interior">Interior:</label> {{ vehicle.interior }}
+          </li>
+          <li><label for="drive">Drive:</label> {{ vehicle.drive }}</li>
+          <li><label for="Miles">Miles:</label> {{ vehicle.miles }}</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
