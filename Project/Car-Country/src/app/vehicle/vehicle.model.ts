@@ -10,7 +10,7 @@ export class Vehicle {
     public engine: string,
     public trans: string,
     public drive: string,
-    public miles: number,
+    public miles: string,
     public price: string,
     public coverImagePath: string,
     public profileImagePath: string,

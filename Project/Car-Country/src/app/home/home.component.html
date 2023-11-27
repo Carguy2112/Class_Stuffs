@@ -1,34 +1,43 @@
 <div class="row justify-content-center">
-  <img src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg" alt="" />
-</div>
+  <div class="col-md-12">
+  <img src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg" alt="" style="max-width: inherit;" />
+</div></div>
 <hr />
 <div
   class="row justify-content-center"
-  style="font-size: x-large; background-color: #304A61; color: white"
+  style="font-size: x-large; background-color: #304a61; color: white"
 >
   Inventory
 </div>
 <div
   class="row justify-content-center"
-  style="font-size: large; color: white; background-color: #2868a1"
+  style="font-size: large; color: white; background-color: #567E9B"
 >
   <span>
-    <a href="" class="col-2" style="color: white;">Trucks</a>
-    <a href="" class="col-2" style="color: white;">Coupes</a>
-    <a href="" class="col-2" style="color: white;">Sedans</a>
-    <a href="" class="col-2" style="color: white;">SUVs</a>
+    <a href="" class="col-2" style="color: white">Trucks</a>
+    <a href="" class="col-2" style="color: white">Coupes</a>
+    <a href="" class="col-2" style="color: white">Sedans</a>
+    <a href="" class="col-2" style="color: white">SUVs</a>
   </span>
 </div>
-
-<label for="featured" style="font-size: small; font-style: italic"
-  >Featured:</label
+<br />
+<div class="col-md-12"
+  style="margin: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    padding-top: 0%;
+    font-style: italic;
+    background-color: #567E9B;
+  "
 >
-<div class="row justify-content-center">
-  <div
-    class="col-sm-3"
-    style="margin-right: 8%"
-    *ngFor="let currentVehicle of myVehicles | slice:0:3; let i = index"
-  >
-    <app-featured [vehicle]="currentVehicle" [idx]="i"></app-featured>
+<div style="color: white;">Featured</div>
+  <div class="row justify-content-center">
+    <div
+      class="col-sm-3"
+      style="margin-right: 8%;"
+      *ngFor="let currentVehicle of myVehicles | slice : 0 : 3; let i = index"
+    >
+      <app-featured [vehicle]="currentVehicle" [idx]="i"></app-featured>
+    </div>
   </div>
 </div>
