@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'ngx-owl-carousel-o'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
@@ -36,7 +36,6 @@ import { FeaturedComponent } from './vehicle/featured/featured.component';
     CarouselModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
