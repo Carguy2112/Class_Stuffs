@@ -10,9 +10,11 @@ import { InventoryService } from 'src/app/shared/services/inventory.service';
 })
 export class InventoryListComponent {
   myInventory: Vehicle[] = [];
+  filteredType = '';
 
   constructor(
     private inventoryService: InventoryService,
+
   ) {}
 
   ngOnInit(){

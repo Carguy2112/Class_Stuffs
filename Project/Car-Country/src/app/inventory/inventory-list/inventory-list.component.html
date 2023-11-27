@@ -1,7 +1,8 @@
 <div class="row mb-3 d-flex justify-content-center" style="gap: 1rem">
+  <input type="text" [(ngModel)]="filteredType" >
   <div
     class="col-md-11"
-    *ngFor="let currentVehicle of myInventory; let i = index"
+    *ngFor="let currentVehicle of myInventory | filter: filteredType: 'type'; let i = index"
     >
     <app-vehicle [vehicle]="currentVehicle" [idx]="i"></app-vehicle>
   </div>

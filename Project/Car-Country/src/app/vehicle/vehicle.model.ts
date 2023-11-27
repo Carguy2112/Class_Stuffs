@@ -1,5 +1,6 @@
 export class Vehicle {
   constructor(
+    public type: string,
     public year: number,
     public make: string,
     public model: string,

@@ -9,6 +9,7 @@ export class InventoryService {
 
   private allVehicles: Vehicle[] = [
     new Vehicle(
+      'truck',
       2018,
       'GMC',
       'Sierra',
@@ -28,6 +29,7 @@ export class InventoryService {
       "This GMC is equipped with 4 Wheel Drive, Leather, Navigation, Power/Heated/Cooled Seats, Sunroof, Back up Camera, Cruise, AM/FM/CD/AUX/Phone, Power Windows/Locks/Mirrors & more! It has a Ecotec 5.3L V8 Engine, an Automatic Transmission and 149xxx miles. We have financing available and we accept trades!"
     ),
     new Vehicle(
+      'sedan',
       2014,
       'BMW',
       '3 Series 335i',
@@ -47,6 +49,7 @@ export class InventoryService {
       ''//details
     ),
     new Vehicle(
+      'coupe',
       2015,
       'Audi',
       'A3',
@@ -66,6 +69,7 @@ export class InventoryService {
       'This Audi is equipped with All Wheel Drive, Leather, Navigation, Heated Seats, Back up Camera, Cruise, AM/FM/Bluetooth, Power Windows/Locks/Mirrors & more! It has a 2.0L Turbo 4 Cylinder Engine, an Automatic Transmission and 109xxx miles. We have financing available and we accept trades!'//details
     ),
     new Vehicle(
+      'truck',
       2018,
       'GMC',
       'Sierra',
@@ -86,6 +90,7 @@ export class InventoryService {
     ),
     /**
     new Vehicle(
+      '',//type
       ,//year
       '',//make
       '',//model

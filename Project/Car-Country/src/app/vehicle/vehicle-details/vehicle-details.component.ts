@@ -30,11 +30,10 @@ export class VehicleDetailsComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: true,
-    navSpeed: 700,
-    navText: ['', ''],
+    touchDrag: false,
+    dots: false,
+    nav: true,
+    navText: ['<', '>'],
     responsive: {
       0: {
         items: 1
@@ -49,7 +48,7 @@ export class VehicleDetailsComponent {
         items: 1
       }
     },
-    nav: true
+
   }
 
 }
