@@ -14,10 +14,10 @@
   style="font-size: large; color: white; background-color: #567E9B"
 >
   <span>
-    <a href="" class="col-2" style="color: white">Trucks</a>
-    <a href="" class="col-2" style="color: white">Coupes</a>
-    <a href="" class="col-2" style="color: white">Sedans</a>
-    <a href="" class="col-2" style="color: white">SUVs</a>
+    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'truck'}" class="col-2" style="color: white">Trucks</a>
+    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'coupe'}" class="col-2" style="color: white">Coupes</a>
+    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'sedan'}" class="col-2" style="color: white">Sedans</a>
+    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'suv'}" class="col-2" style="color: white">SUVs</a>
   </span>
 </div>
 <br />
@@ -35,9 +35,9 @@
     <div
       class="col-sm-3"
       style="margin-right: 8%;"
-      *ngFor="let currentVehicle of myVehicles | slice : 0 : 3; let i = index"
+      *ngFor="let currentVehicle of myVehicles | slice : 0 : 3;"
     >
-      <app-featured [vehicle]="currentVehicle" [idx]="i"></app-featured>
+      <app-featured [vehicle]="currentVehicle"></app-featured>
     </div>
   </div>
 </div>

@@ -9,6 +9,7 @@ export class InventoryService {
 
   private allVehicles: Vehicle[] = [
     new Vehicle(
+      1000,
       'truck',
       2018,
       'GMC',
@@ -29,6 +30,7 @@ export class InventoryService {
       "This GMC is equipped with 4 Wheel Drive, Leather, Navigation, Power/Heated/Cooled Seats, Sunroof, Back up Camera, Cruise, AM/FM/CD/AUX/Phone, Power Windows/Locks/Mirrors & more! It has a Ecotec 5.3L V8 Engine, an Automatic Transmission and 149xxx miles. We have financing available and we accept trades!"
     ),
     new Vehicle(
+      1001,
       'sedan',
       2014,
       'BMW',
@@ -49,6 +51,7 @@ export class InventoryService {
       'This BMW is equipped with Rear Wheel Drive, Leather, Navigation, Power/Heated Seats, Sunroof, Cruise, AM/FM/CD/Phone, Power Windows/Locks/Mirrors & more! It has a 3.0L 6 Cylinder Engine, an Automatic Transmission and only 96xxx miles! We have financing available and we accept trades!'//details
     ),
     new Vehicle(
+      1002,
       'coupe',
       2015,
       'Audi',
@@ -69,6 +72,7 @@ export class InventoryService {
       'This Audi is equipped with All Wheel Drive, Leather, Navigation, Heated Seats, Back up Camera, Cruise, AM/FM/Bluetooth, Power Windows/Locks/Mirrors & more! It has a 2.0L Turbo 4 Cylinder Engine, an Automatic Transmission and 109xxx miles. We have financing available and we accept trades!'//details
     ),
     new Vehicle(
+      1003,
       'truck',
       2012,
       'Chevrolet',
@@ -89,6 +93,7 @@ export class InventoryService {
       "This Chevy is equipped with 4 Wheel Drive, Leather, Navigation, Power/Heated/Cooled Seats, Sunroof, Back up Camera, Cruise, AM/FM/CD/AUX, Power Windows/Locks/Mirrors & more! It has a Vortec 6.2L V8 Engine, an Automatic Transmission and 187xxx miles. We have financing available and we accept trades!"
     ),
     new Vehicle(
+      1004,
       'suv',//type
       2017,//year
       'Buick',//make
@@ -109,6 +114,7 @@ export class InventoryService {
       'This Encore is equipped with Front Wheel Drive, Power Driver Seat, Back up Camera, Sunroof, Cruise, AM/FM/AUX/Phone, Power Windows/Locks/Mirrors & more! It has a Ecotec 1.4L Turbo 4 Cylinder Engine, an Automatic Transmission and only 44xxx miles! We have financing available and we accept trades!'//details
     ),
     new Vehicle(
+      1005,
       'suv',//type
       2019,//year
       'Chevrolet',//make
@@ -129,6 +135,7 @@ export class InventoryService {
       'This Equinox is equipped with Front Wheel Drive, Power Driver Seat, Heated Seats, Cruise, AM/FM/AUX/Phone, Power Windows/Locks/Mirrors & more! It has a 1.5L Turbo 4 Cylinder Engine, an Automatic Transmission and 141xxx miles. We have financing available and we accept trades!'//details
     ),
     new Vehicle(
+      1006,
       'minivan',//type
       2017,//year
       'Chrysler',//make
@@ -150,6 +157,7 @@ export class InventoryService {
     ),
     /**
     new Vehicle(
+      ,//stockNum
       '',//type
       ,//year
       '',//make
@@ -175,10 +183,22 @@ export class InventoryService {
 
 
   getVehicle(idx: number) {
-    return this.allVehicles.slice()[idx];
+    return this.allVehicles.slice().find((vehicle)=>{
+      if (vehicle.stockNum === idx) {
+        return vehicle
+      }
+    });
   }
 
   getVehicles() {
     return this.allVehicles.slice();
+  }
+
+  getVehiclesByType(type: string) {
+    return this.allVehicles.slice().filter((vehicle) => {
+      if (vehicle.type === type) {
+        return vehicle
+      }
+    })
   }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { Vehicle } from 'src/app/vehicle/vehicle.model';
 import { InventoryService } from 'src/app/shared/services/inventory.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-inventory-list',
@@ -14,11 +15,13 @@ export class InventoryListComponent {
 
   constructor(
     private inventoryService: InventoryService,
-
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit(){
-    this.myInventory = this.inventoryService.getVehicles();
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.myInventory = this.inventoryService.getVehiclesByType(params.type)
+    })
   };
 
 }

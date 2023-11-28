@@ -8,5 +8,4 @@ import { Vehicle } from '../vehicle.model';
 })
 export class FeaturedComponent {
   @Input() vehicle: Vehicle;
-  @Input() idx: number;
 }
