@@ -20,7 +20,13 @@ export class InventoryListComponent {
 
   ngOnInit(){
     this.activatedRoute.queryParams.subscribe(params => {
-      this.myInventory = this.inventoryService.getVehiclesByType(params.type)
+      if (params.type === undefined) {
+        this.myInventory = this.inventoryService.getVehicles()
+      }
+      else {
+        this.myInventory = this.inventoryService.getVehiclesByType(params.type)
+      }
+
     })
   };
 
