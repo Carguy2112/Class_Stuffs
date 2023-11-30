@@ -1,41 +1,79 @@
 <div class="row justify-content-center">
   <div class="col-md-12">
-  <img src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg" alt="" style="max-width: inherit;" />
-</div></div>
+    <img
+      src="https://i.postimg.cc/Yq2gHGDn/the-keys2.jpg"
+      alt=""
+      style="max-width: inherit"
+    />
+  </div>
+</div>
 <hr />
 <div
   class="row justify-content-center"
   style="font-size: x-large; background-color: #304a61; color: white"
 >
-  Inventory
+  <a [routerLink]="['/', 'inventory']" style="color: white">Inventory</a>
 </div>
 <div
   class="row justify-content-center"
-  style="font-size: large; color: white; background-color: #567E9B"
+  style="font-size: large; color: white; background-color: #567e9b"
 >
   <span>
-    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'truck'}" class="col-2" style="color: white">Trucks</a>
-    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'coupe'}" class="col-2" style="color: white">Coupes</a>
-    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'sedan'}" class="col-2" style="color: white">Sedans</a>
-    <a [routerLink]="['/', 'inventory']" [queryParams]="{type: 'suv'}" class="col-2" style="color: white">SUVs</a>
+    <a
+      [routerLink]="['/', 'inventory']"
+      [queryParams]="{ type: 'truck' }"
+      class="col-2"
+      style="color: white"
+      >Trucks</a
+    >
+    <a
+      [routerLink]="['/', 'inventory']"
+      [queryParams]="{ type: 'coupe' }"
+      class="col-2"
+      style="color: white"
+      >Coupes</a
+    >
+    <a
+      [routerLink]="['/', 'inventory']"
+      [queryParams]="{ type: 'sedan' }"
+      class="col-2"
+      style="color: white"
+      >Sedans</a
+    >
+    <a
+      [routerLink]="['/', 'inventory']"
+      [queryParams]="{ type: 'suv' }"
+      class="col-2"
+      style="color: white"
+      >SUVs</a
+    >
+    <a
+      [routerLink]="['/', 'inventory']"
+      [queryParams]="{ type: 'minivan' }"
+      class="col-2"
+      style="color: white"
+      >Minivans</a
+    >
   </span>
 </div>
 <br />
-<div class="col-md-12"
-  style="margin: 0;
+<div
+  class="col-md-12"
+  style="
+    margin: 0;
     border: 1px solid black;
     padding: 1rem;
     padding-top: 0%;
     font-style: italic;
-    background-color: #567E9B;
+    background-color: #567e9b;
   "
 >
-<div style="color: white;">Featured</div>
+  <div style="color: white">Featured</div>
   <div class="row justify-content-center">
     <div
       class="col-sm-3"
-      style="margin-right: 8%;"
-      *ngFor="let currentVehicle of myVehicles | slice : 0 : 3;"
+      style="margin-right: 8%"
+      *ngFor="let currentVehicle of myVehicles | slice : 0 : 3"
     >
       <app-featured [vehicle]="currentVehicle"></app-featured>
     </div>
