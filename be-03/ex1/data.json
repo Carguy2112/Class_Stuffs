@@ -1,0 +1,16 @@
+[
+	{
+		"id": 2342425,
+		"name": "John Doe",
+		"email": "jdoe@gmail.com",
+		"phone": "555-555-5555",
+		"address": "123 Main St"
+	},
+	{
+		"id": 2342426,
+		"name": "Jane Doe",
+		"email": "janed@gmail.com",
+		"phone": "555-555-5555",
+		"address": "987 Non-main St"
+	}
+]
