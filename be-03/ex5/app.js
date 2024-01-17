@@ -1,7 +1,30 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
+app.use(express.static(path.resolve(__dirname,'./public')));
 
 
-app.listen(5000, ()=>{
-    console.log('server is online')
+app.get('/',(req, res)=>{
+    res.sendFile(path.resolve(__dirname, './home.html'))
 })
+
+app.get('/detail',(req, res)=>{
+    res.sendFile(path.resolve(__dirname, './detail.html'))
+})
+
+
+app.get('/new',(req, res)=>{
+    res.sendFile(path.resolve(__dirname, './new.html'))
+})
+
+app.get('/edit',(req, res)=>{
+    res.sendFile(path.resolve(__dirname, './edit.html'))
+})
+
+
+app.get('*',(req, res)=>{
+    return res.status(404).send('You obviously typed that wrong.')
+})
+
+app.listen(5000, ()=>{})
