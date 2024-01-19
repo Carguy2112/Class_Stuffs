@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"name": "Elliot Alderson",
+		"grade": 91
+	},
+	{
+		"id": 2,
+		"name": "Ada Lovelace",
+		"grade": 95
+	},
+	{
+		"id": 3,
+		"name": "Tony Stark",
+		"grade": 88
+	},
+	{
+		"id": 4,
+		"name": "Leia Organa",
+		"grade": 72
+	},
+	{
+		"id": 5,
+		"name": "Bruce Wayne",
+		"grade": 78
+	}
+]
